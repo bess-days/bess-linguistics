@@ -1,0 +1,1 @@
+This folder works on being able to generate suffixes and prefixes that make phonetical sense to the language project in Amy's Ling 150 class
