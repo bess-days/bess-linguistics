@@ -3,7 +3,7 @@ from nltk.corpus import wordnet
 import random
 
 
-#Creating a list
+
 synonyms = []
 themesyns = []
 for syn in wordnet.synsets("red"):
