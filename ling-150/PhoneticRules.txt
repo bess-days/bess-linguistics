@@ -1,0 +1,8 @@
+first vowel sound must shift to an elongated (:) vowel or a dipthong
+(b)	-ɝn holds the position of a bound morpheme after a voicless velar -> Vowel
+(c)	-R-colored vowels + n holds the position of bound morpheme after a Voiced Constant -> vowel o
+(d)	-el holds the position of a bound morpheme if the word ends in alveolar consonants
+(e)	Three letter words, specifically with a CVC often have a short vowel between, however, changing it to either an elongated vowel or dipthong allows smoother pronounciation for the suffic
+(f)	In English there are many minimal pairs, like i: and 3, that appear in environments. However, adding the classifier defaults minimal pairs to ‘ai’  or a dipthong.
+(g)	If a generated word resembles another English word, a different stress is  placed or the addition of a stop.
+(h)	Double consonants, alveolar, hold the bound -el morpheme

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Used for linguistic generating"
+authors:
+  - family-names: Greenspun
+    given-names: Sydney
+title: "Ling 150"
+version: 2.0.4
+date-released: 2021-09-24
