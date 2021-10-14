@@ -6,11 +6,12 @@
 alveolar = ['d', 'l', 'n', 't', 's']
 doublecon = ['ll', 'zz', 'ff', 'dd']
 velar = ['k', 'c', 'g', 'x']
+bilabial = ['b','p','m']
 vowels = ['a', 'e', 'i', 'o', 'u']
 syllabic = ['n=', 'm=', 'l=']
 swede_syllabic = ['n>', 'l>']
 gollatal = ['g?']
-seperated = alveolar + doublecon + velar + vowels
+seperated = alveolar + doublecon + velar + vowels + bilabial
 word = str(input('Word: '))
 
 
@@ -63,6 +64,14 @@ for w in word:
                     break
                 else:
                     pass
+            # ends with bilabial
+            if word.endswith(tuple(bilabial)):
+                if word[1] in vowels:
+                    word = word[:2] + ':' + word[2:] + syllabic[1]
+                    break
+                else:
+                    pass
+
         #if any other letter
         else:
             if word[1] in vowels:
@@ -92,7 +101,18 @@ for w in word:
                     word = word[:2] + ':' + word[2:] + swede_syllabic[0]
                     break
                 else:
-                    pass
+                    if word[2:] in vowels:
+                        word = word[:3] + ':' + word[2:] + swede_syllabic[0]
+                        break
+
+            # ends with bilabial
+            if word.endswith(tuple(bilabial)):
+                if word[1] in vowels:
+                    word = word[:2] + ':' + word[3:] + syllabic[1]
+                    break
+                else:
+                        word = word[:3] + ':' + word[4:] + syllabic[1]
+                        break
         #if any other letter
         else:
             if word[1] in vowels:
@@ -113,6 +133,7 @@ word = word.replace('ll', 'l')
 word = word.replace('n>', 'ɳ')
 word = word.replace('l>', 'ɭ')
 word = word.replace('g?', 'ʔ')
+word = word.replace('y', '')
 
 print('[' + word + ']')
 word = list(word)
