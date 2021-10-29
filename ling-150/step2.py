@@ -12,6 +12,7 @@ vowels = ['a', 'e', 'i', 'o', 'u']
 syllabic = ['n=', 'm=', 'l=']
 swede_syllabic = ['n>', 'l>']
 gollatal = ['g?']
+doublecon = ['ll','tt','ss']
 seperated = alveolar + doublecon + velar + vowels + bilabial
 word = str(input('Word: '))
 
@@ -141,6 +142,7 @@ word = word.replace('n>', 'ɳ')
 word = word.replace('l>', 'ɭ')
 word = word.replace('g?', 'ʔ')
 word = word.replace('y', '')
+word = word.replace('a:', '')
 
 IPA = ('[' + word + ']')
 print(IPA)
